@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="G-DRAGON과 BIGBANG의 활동 일정을 기록하고 정리하는 비공식 팬 아카이브입니다.">
+  <title>G-DRAGON SCHEDULE</title>
+  <script type="module" crossorigin src="/assets/index-I5pamf3D.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DRV_HzBU.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#home" class="logo">G-DRAGON<span>.</span></a>
+    <nav class="navigation">
+      <a href="#home" class="active">홈</a>
+      <a href="upcoming.html">예정 일정</a>
+      <a href="#calendar">월간 일정</a>
+      <a href="past.html">지난 활동</a>
+      <a href="#about">사이트 안내</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+
+  <section class="intro">
+    <div class="intro-top">
+      <span class="intro-label">G-DRAGON SCHEDULE</span>
+      <span class="intro-year">2026 — 2027</span>
+    </div>
+
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <span class="hero-index">01 — 일정 아카이브</span>
+        <h1>G-DRAGON</h1>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <span>비공식 팬 아카이브</span>
+    </div>
+  </section>
+
+  <section class="summary">
+    <div class="summary-card">
+      <span class="summary-label">전체 일정 / 01</span>
+      <strong id="total-count">0</strong>
+      <span class="summary-description">전체 등록 일정</span>
+    </div>
+
+    <div class="summary-card">
+      <span class="summary-label">예정 일정 / 02</span>
+      <strong id="upcoming-count">0</strong>
+      <span class="summary-description">예정된 일정</span>
+    </div>
+
+    <div class="summary-card">
+      <span class="summary-label">지난 활동 / 03</span>
+      <strong id="past-count">0</strong>
+      <span class="summary-description">지난 활동 기록</span>
+    </div>
+  </section>
+
+  <section class="dashboard" id="calendar">
+
+    <div class="calendar-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">01 — 월간 일정</span>
+          <h2>월간 달력<span class="red-dot">.</span></h2>
+        </div>
+
+        <div class="calendar-controls">
+          <button id="prev-month" type="button" aria-label="이전 달">←</button>
+          <span id="current-month"></span>
+          <button id="next-month" type="button" aria-label="다음 달">→</button>
+        </div>
+      </div>
+
+      
+<div class="calendar-toolbar">
+  <select id="artist-filter" aria-label="아티스트 선택">
+    <option value="all">전체 아티스트</option>
+    <option value="G-DRAGON">G-DRAGON</option>
+    <option value="BIGBANG">BIGBANG</option>
+  </select>
+
+  <div class="category-legend">
+    <span class="legend-item"><i class="category-dot category-performance"></i>공연</span>
+    <span class="legend-item"><i class="category-dot category-broadcast"></i>방송</span>
+    <span class="legend-item"><i class="category-dot category-event"></i>행사</span>
+    <span class="legend-item"><i class="category-dot category-exhibition"></i>전시</span>
+    <span class="legend-item"><i class="category-dot category-release"></i>음원 발매</span>
+  </div>
+</div>
+
+<div class="calendar-grid" id="calendar-grid"></div>
+
+    </div>
+
+    <div class="selected-schedule-section">
+      <div class="section-heading">
+        <div>
+          <span class="section-label">02 — 날짜별 일정</span>
+          <h2 id="selected-date">선택한 날짜</h2>
+        </div>
+        <span class="section-side-note">선택한 날짜</span>
+      </div>
+
+      <div id="schedule-list">
+        <p class="empty-schedule">일정을 불러오는 중입니다.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="section-heading">
+      <div>
+        <span class="section-label">03 — 사이트 안내</span>
+        <h2>사이트 안내<span class="red-dot">.</span></h2>
+      </div>
+      <span class="section-side-note">이용 안내</span>
+    </div>
+
+    <div class="about-content">
+
+      <div class="about-item">
+        <span class="about-number">01</span>
+        <h3>사이트 소개</h3>
+        <p>
+          G-DRAGON SCHEDULE은 G-DRAGON과 BIGBANG의 활동 일정을 한곳에서 확인하실 수 있도록 제작된 비공식 팬 아카이브입니다.
+          <br><br>
+          G-DRAGON의 활동을 비롯해 BIGBANG의 활동, 공연, 방송, 행사, 음원 등 다양한 일정을 기록하고 정리합니다.
+          <br><br>
+          팬들이 필요한 정보를 보다 쉽고 빠르게 확인할 수 있도록 일정 정보를 지속적으로 수집하고 업데이트할 예정입니다.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <span class="about-number">02</span>
+        <h3>일정 업데이트 기준</h3>
+        <p>
+          - 공식 홈페이지 및 공식 SNS 계정의 공지를 우선적으로 반영합니다.
+          <br><br>
+          - 공연, 방송, 행사, 발매 및 콘텐츠 관련 일정을 구분하여 정리합니다.
+          <br><br>
+          - 새로운 일정이 공개되거나 기존 일정이 변경되는 경우 확인 후 업데이트합니다.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <span class="about-number">03</span>
+        <h3>날짜 및 시간 표기</h3>
+        <p>
+          별도의 안내가 없는 경우 모든 일정은 대한민국 표준시(KST, UTC+9)를 기준으로 표기합니다.
+          <br><br>
+          해외 공연 및 행사 일정은 현지 시간과 한국 시간을 구분하여 안내할 수 있으며, 일정에 따라 날짜가 달라질 수 있으므로 확인에 유의해 주시기 바랍니다.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <span class="about-number">04</span>
+        <h3>정보 오류 및 수정 요청</h3>
+        <p>
+          일정 누락, 날짜 및 시간 오류, 잘못된 정보 등을 발견하신 경우 제보해 주시면 확인 후 수정하겠습니다.
+          <br><br>
+          일정 변경이나 취소가 발생한 경우에도 확인 가능한 공식 자료를 바탕으로 정보를 갱신합니다.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <span class="about-number">05</span>
+        <h3>저작권 및 운영 안내</h3>
+        <p>
+          본 사이트는 팬이 자발적으로 제작하고 운영하는 비공식 팬 아카이브이며, YG ENTERTAINMENT, Galaxy Corporation 및 G-DRAGON과 공식적인 관련이 없습니다.
+          <br><br>
+          사이트 내 일정 정보의 정리 및 편집, 자체 제작 디자인 등의 권리는 제작자에게 있습니다. 아티스트의 사진, 영상, 로고 및 기타 제3자 콘텐츠의 권리는 각 원저작권자에게 귀속됩니다.
+          <br><br>
+          별도의 허가 없이 사이트의 구성 및 자체 제작 콘텐츠를 무단으로 복제하거나 재배포하는 행위는 삼가 주시기 바랍니다.
+        </p>
+      </div>
+
+      <div class="about-item">
+        <span class="about-number">06</span>
+        <h3>일정 제보 및 문의사항</h3>
+        <p>
+          일정 제보 및 기타 문의는 아래 연락처를 이용해 주시기 바랍니다.
+        </p>
+        <div class="contact-links">
+          <a href="https://www.instagram.com/mireonavelunett/" target="_blank" rel="noopener noreferrer">
+            인스타그램 : mireonavelunett ↗
+          </a>
+          <a href="mailto:mireonavelunett@gmail.com">
+            이메일 : mireonavelunett@gmail.com
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div>
+    <strong>G-DRAGON<span>.</span> SCHEDULE</strong>
+    <span>비공식 팬 아카이브</span>
+  </div>
+  <p>UNOFFICIAL FAN ARCHIVE · © 2026</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="G-DRAGON과 BIGBANG의 예정된 활동 일정을 확인할 수 있는 비공식 팬 아카이브입니다.">
+  <title>예정 일정 | G-DRAGON SCHEDULE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">G-DRAGON<span>.</span></a>
+    <nav class="navigation">
+      <a href="index.html">홈</a>
+      <a href="upcoming.html" class="active">예정 일정</a>
+      <a href="index.html#calendar">월간 일정</a>
+      <a href="past.html">지난 활동</a>
+      <a href="index.html#about">사이트 안내</a>
+    </nav>
+  </div>
+</header>
+
+<main class="past-page">
+
+  <section class="intro archive-intro">
+    <div class="intro-top">
+      <span class="intro-label">G-DRAGON SCHEDULE</span>
+      <span class="intro-year">2026 — 2027</span>
+    </div>
+
+    <div class="hero-layout">
+      <div class="hero-copy">
+        <span class="hero-index">01 — 일정 아카이브</span>
+        <h1>예정 일정<span class="red-dot">.</span></h1>
+      </div>
+    </div>
+
+    <div class="hero-bottom">
+      <span>앞으로 진행될 활동 일정</span>
+    </div>
+  </section>
+
+  <section class="archive-page-section">
+
+    <div class="section-heading">
+      <div>
+        <span class="section-label">01 — 일정 목록</span>
+        <h2>예정 일정</h2>
+      </div>
+      <span id="upcoming-count-label">0개 일정</span>
+    </div>
+
+    <div class="archive-filters">
+      <select id="year-filter" aria-label="연도 선택">
+        <option value="all">전체 연도</option>
+      </select>
+
+      <select id="month-filter" aria-label="월 선택">
+        <option value="all">전체 월</option>
+        <option value="01">1월</option>
+        <option value="02">2월</option>
+        <option value="03">3월</option>
+        <option value="04">4월</option>
+        <option value="05">5월</option>
+        <option value="06">6월</option>
+        <option value="07">7월</option>
+        <option value="08">8월</option>
+        <option value="09">9월</option>
+        <option value="10">10월</option>
+        <option value="11">11월</option>
+        <option value="12">12월</option>
+      </select>
+
+      <select id="member-filter" aria-label="아티스트 선택">
+        <option value="all">전체 아티스트</option>
+      </select>
+    </div>
+
+    <div id="upcoming-schedule-list">
+      <p class="empty-schedule">예정 일정을 불러오는 중입니다.</p>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  <div>
+    <strong>G-DRAGON<span>.</span> SCHEDULE</strong>
+    <span>비공식 팬 아카이브</span>
+  </div>
+  <p>비공식 팬 아카이브 · © 2026</p>
+</footer>
+
+<script type="module" src="/upcoming.js"></script>
+</body>
+</html>
